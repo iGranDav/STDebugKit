@@ -279,6 +279,7 @@ NSString* const STDebugKitCoreDataFindViewControllerAttributeButtonText = @"Choo
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 140, self.view.bounds.size.width - 40, 30)];
     [self.textField setAutoresizingMask:(UIViewAutoresizingFlexibleWidth)];
     [self.textField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.textField setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [self.view addSubview:self.textField];
     [self.textField setDelegate:self];
     [self.textField setHidden:YES];
